@@ -70,4 +70,16 @@ else
   cd bin/
   cd linux-x86-64/
   ./sonar.sh start
+  ./sonar.sh status
+  
+  echo 'Script installed successfully'
 fi
+
+#getting the IP address for the site
+
+ifconfig
+
+#e.g
+
+# to access the site YOURIPADDRESS:9000 in the browser
+
