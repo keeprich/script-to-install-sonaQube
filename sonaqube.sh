@@ -20,6 +20,7 @@
 #   109  sudo unzip /opt/sonarqube-9.3.0.51899.zip
 #   110  sudo chown -R vagrant:vagrant /opt/sonarqube-9.3.0.51899
 #   111  cd /opt/sonarqube-x.x/bin/linux-x86-64
+#correct path is cd /opt/sonarqube-9.3.0.51899/bin/linux-x86-64
 #   112  ls
 #   113  cd ..
 #   114  ls
@@ -50,6 +51,7 @@ then
   cd /opt
   sudo yum install wget -y
   sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.3.0.51899.zip
+  sudo yum install unzip -y
   sudo unzip /opt/sonarqube-9.3.0.51899.zip
   sudo chown -R vagrant:vagrant /opt/sonarqube-9.3.0.51899
   cd sonarqube-9.3.0.51899/
@@ -64,6 +66,7 @@ else
   cd /opt
   sudo yum install wget -y
   sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.3.0.51899.zip
+  sudo yum install unzip -y
   sudo unzip /opt/sonarqube-9.3.0.51899.zip
   sudo chown -R vagrant:vagrant /opt/sonarqube-9.3.0.51899
   cd sonarqube-9.3.0.51899/
